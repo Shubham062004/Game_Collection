@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <!-- Audio elements -->
+    <audio id="select-sound" src="./assets/select.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="./assets/win.mp3" preload="auto"></audio>
+    <audio id="lose-sound" src="./assets/lose.mp3" preload="auto"></audio>
+    <audio id="game-over-sound" src="./assets/game-over-2.mp3" preload="auto"></audio>
+    <audio id="tie-sound" src="./assets/lose.mp3" preload="auto"></audio>
+
+    <!-- score -->
+    <h1 id="score">0 - 0</h1>
+
+    <!-- Play Area -->
+    <div class="section">
+      <div class="you">
+        <h3>You</h3>
+
+        <div class="youa" id="youa">
+          <img id="you-rock-img" src="./assets/rock-hand.png" alt="" />
+          <img id="you-scissors-img" src="./assets/scissors-hand.png" alt="" />
+          <img
+            class="youb"
+            id="you-paper-img"
+            src="./assets/paper-hand.png"
+            alt=""
+          />
+        </div>
+        <div id="logo">
+          <img
+            class="logo-img"
+            id="rock-logo"
+            src="./assets/rock-logo.png"
+            alt=""
+          />
+          <img
+            class="logo-img"
+            id="paper-logo"
+            src="./assets/paper-logo.png"
+            alt=""
+          />
+          <img
+            class="logo-img"
+            id="scissors-logo"
+            src="./assets/scissors-logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div><img id="vs" src="./assets/vs.png" alt="" /></div>
+      <div class="you">
+        <h3>Comp</h3>
+
+        <div class="youa" id="comp-box">
+          <img id="comp-paper-img" src="./assets/paper-hand.png" alt="" />
+          <img
+            class="youe"
+            id="comp-rock-img"
+            src="./assets/rock-hand.png"
+            alt=""
+          />
+          <img id="comp-scissors-img" src="./assets/scissors-hand.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="over" class="over">
+      <h1 id="result"><span id="player"></span> won the game</h1>
+      <button id="reset-game">Play Again</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
